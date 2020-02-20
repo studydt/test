@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-expression-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-beans-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-jcl-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-web-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/jsqlparser-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/protobuf-java-3.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-aop-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-core-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-jdbc-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-context-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/fastjson-1.2.61.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/mapper-4.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/pagehelper-5.1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-webmvc-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/mybatis-spring-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/spring-tx-5.1.8.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/druid-1.1.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/mybatis-3.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/target/SpringMVC_Mybatis_Annotation/WEB-INF/lib/persistence-api-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

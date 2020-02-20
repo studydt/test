@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>更新版本介绍</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+          type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet"/>
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet"/>
+
+    <!-- Custom Css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../css/themes/all-themes.css" rel="stylesheet"/>
+    <script>
+        //这里代码多了几行，但是不会延迟显示，速度比较好，格式可以自定义，是理想的时间显示
+        setInterval("fun(show_time)", 1000);
+
+        function fun(timeID) {
+            var date = new Date();  //创建对象  
+            var y = date.getFullYear();     //获取年份  
+            var m = date.getMonth() + 1;   //获取月份  返回0-11  
+            var d = date.getDate(); // 获取日  
+            var w = date.getDay();   //获取星期几  返回0-6   (0=星期天) 
+            var ww = ' 星期' + '日一二三四五六'.charAt(new Date().getDay());//星期几
+            var h = date.getHours();  //时
+            var minute = date.getMinutes();  //分
+            var s = date.getSeconds(); //秒
+            if (m < 10) {
+                m = "0" + m;
+            }
+            if (d < 10) {
+                d = "0" + d;
+            }
+            if (h < 10) {
+                h = "0" + h;
+            }
+            if (minute < 10) {
+                minute = "0" + minute;
+            }
+            if (s < 10) {
+                s = "0" + s;
+            }
+            document.getElementById("nowDiv").innerHTML = y + "-" + m + "-" + d + "   " + h + ":" + minute + ":" + s;
+            document.getElementById("nowDiv1").innerHTML = ww;
+        }
+    </script>
+</head>
+
+<body class="theme-green">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Please wait...</p>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+
+<!-- Top Bar -->
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
+               data-target="#navbar-collapse" aria-expanded="false"></a>
+            <a href="javascript:void(0);" class="bars"></a>
+            <a class="navbar-brand" href="../index2.jsp">智慧农业 - 土壤元素含量检测</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Call Search -->
+                <li><a href="javascript:void(0);" class="js-search" data-close="true"><i
+                        class="material-icons">search</i></a></li>
+                <!-- #END# Call Search -->
+                <!-- Notifications -->
+                <li class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                        <i class="material-icons">notifications</i>
+
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="header">当前系统时间</li>
+                        <li class="body">
+                            <ul class="menu">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="icon-circle bg-light-green">
+                                            <i class="material-icons"></i>
+                                        </div>
+                                        <div class="menu-info">
+                                            <h4>
+                                                <div class="notification-content" id="show_time">
+                                                    <small class="notification-timestamp pull-right"
+                                                           id="nowDiv1"></small>
+                                                    <div class="notification-heading" id="nowDiv"></div>
+                                                </div>
+                                            </h4>
+                                            <p>
+                                                </i>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <!-- #END# Notifications -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- #Top Bar -->
+<section>
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <!-- User Info  -->
+        <div class="user-info">
+            <div class="image">
+                <img src="../images/user.png" width="48" height="48" alt="User"/>
+            </div>
+            <div class="info-container">
+                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">土壤检测员</div>
+
+            </div>
+        </div>
+        <!-- #User Info  -->
+        <!-- Menu  -->
+        <div class="menu">
+            <ul class="list">
+                <li class="header">主导航</li>
+                <li class="active">
+                    <a href="../index2.jsp">
+                        <i class="material-icons">home</i>
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="helper-classes.html">
+                        <i class="material-icons">layers</i>
+                        <span>帮助</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="changelogs.html">
+                        <i class="material-icons">update</i>
+                        <span>更新日志</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+                <!-- Footer  -->
+                <div class="legal">
+                    <div class="copyright">
+                        团队: 滴灌小队
+                    </div>
+                </div>
+                <!-- #Footer  -->
+
+    </aside>
+    <!--         #END# Left Sidebar -->
+</section>
+<section class="content">
+    <div class="container-fluid">
+        <!-- Changelogs -->
+        <div class="block-header">
+            <h2>更新日志</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>v1.0.3</h2>
+                    </div>
+                    <div class="body">
+                        优化<br/>
+                        Version 1.0.3 released on 24th October 2019.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>v1.0.2</h2>
+                    </div>
+                    <div class="body">
+                        前端表格接收后台数据库的数据并显示出来<br/>
+                        Version 1.0.2 released on 19th October 2019.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>v1.0.1</h2>
+                    </div>
+                    <div class="body">
+                        后台接收硬件设备发送的土壤元素含量数据<br/>
+                        Version 1.0.1 released on 12th October 2019.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>v1.0.0</h2>
+                    </div>
+                    <div class="body">
+                        页面修改设置<br/>
+                        Version 1.0.0 released on 1th October 2019.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Jquery Core Js -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core Js -->
+<script src="../plugins/bootstrap/js/bootstrap.js"></script>
+
+<!-- Select Plugin Js -->
+<script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+<!-- Slimscroll Plugin Js -->
+<script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+<!-- Waves Effect Plugin Js -->
+<script src="../plugins/node-waves/waves.js"></script>
+
+<!-- Custom Js -->
+<script src="../js/admin.js"></script>
+
+<!-- Demo Js -->
+<script src="../js/demo.js"></script>
+</body>
+
+</html>
